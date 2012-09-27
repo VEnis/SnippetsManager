@@ -1,0 +1,2 @@
+SnippetsManager
+===============
