@@ -13,51 +13,30 @@ Ext.define('SnippetsManager.view.Viewport', {
     initComponent: function() {
         this.items = {
             xtype: 'panel',
-            dockedItems: [{
-                dock: 'top',
-                xtype: 'toolbar',
-                height: 80,
-                items: [{
-                    xtype: 'actionbar',
-                    width: 150
-                }, {
-                    xtype: 'component',
-                    html: 'Snippets Manager<br>Ultimate Solution'
-                }]
-            }],
-            layout: {
-                type: 'hbox',
-                align: 'stretch'
-            },
+            layout: 'border',
             items: [{
-                width: 250,
-                xtype: 'panel',
-                layout: {
-                    type: 'vbox',
-                    align: 'stretch'
-                },
-                items: [{
-                    xtype: 'tagslist',
-                    flex: 1
-                }, {
-                    html: 'Ad',
-                    height: 250,
-                    xtype: 'panel'
-                }]
+                xtype: 'tagslist',
+                region: 'west',
+                split: true,
+                collapsible: true
             }, {
                 xtype: 'container',
-                flex: 1,
-                layout: {
-                    type: 'vbox',
-                    align: 'stretch'
-                },
+                region: 'center',
+                layout: 'border',
                 items: [{
                     xtype: 'snippetslist',
-                    height: 250
-                }, {
-                    xtype: 'snippetinfo',
+                    region: 'center',
                     flex: 1
+                },{
+                    xtype: 'snippetinfo',
+                    region: 'south',
+                    split: true,
+                    collapsible: true,
+                    flex: 2
                 }]
+            },{
+                xtype:'actionbar',
+                region:'north'
             }]
         };
 

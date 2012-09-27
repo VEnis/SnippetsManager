@@ -5,9 +5,10 @@ Ext.application({
 
     models: ['Snippet', 'Tag'],
     stores: ['Snippets', 'Tags'],
+    controllers: ['Snippet', 'Tag'],
 
     launch: function() {
         // This is fired as soon as the page is ready
-        console.log("TEST");
+        //console.log("TEST");
     }
 });

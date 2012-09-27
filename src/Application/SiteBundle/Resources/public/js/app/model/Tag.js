@@ -4,7 +4,7 @@ Ext.define('SnippetsManager.model.Tag', {
 
     proxy: {
         type: 'ajax',
-        url: 'data/tags.json',
+        url: 'bundles/applicationsite/data/tags.json',
         reader: {
             type: 'json',
             root: 'results'
