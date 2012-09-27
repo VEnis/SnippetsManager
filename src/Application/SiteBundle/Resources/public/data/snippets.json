@@ -1,0 +1,40 @@
+{
+    "success": true,
+    "results": [
+        {
+            "name": "Class loader",
+            "syntax": "PHP",
+            "created": "01.01.2012",
+            "updated": "01.01.2012",
+            "content": "My snippet content"
+        },
+        {
+            "name": "Dynamic attributes in ruby",
+            "syntax": "Ruby",
+            "created": "01.01.2012",
+            "updated": "01.01.2012",
+            "content": "class User\ndef update_attr(key, value)\nself.class.__send__(:attr_accessor, key)"
+        },
+        {
+            "name": "Using example",
+            "syntax": ".NET",
+            "created": "01.01.2012",
+            "updated": "01.01.2012",
+            "content": "using System.Windows.Forms;"
+        },
+        {
+            "name": "largest files in all directories",
+            "syntax": "Bash",
+            "created": "01.01.2012",
+            "updated": "01.01.2012",
+            "content": "du -hsx * | sort -rh | head -10"
+        },
+        {
+            "name": "Some info",
+            "syntax": "Plain text",
+            "created": "01.01.2012",
+            "updated": "01.01.2012",
+            "content": "Some info here"
+        }        
+    ]
+}
