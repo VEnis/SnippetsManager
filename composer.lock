@@ -36,7 +36,7 @@
                 "bin/behat"
             ],
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\Behat": "src/"
@@ -90,7 +90,7 @@
             },
             "time": "2012-09-26 01:03:21",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\Gherkin": "src/"
@@ -249,7 +249,7 @@
             },
             "time": "2012-07-02 10:59:06",
             "type": "behat-extension",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\MinkExtension": "src/"
@@ -301,7 +301,7 @@
             },
             "time": "2012-07-02 11:30:36",
             "type": "mink-driver",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\Mink\\Driver": "src/"
@@ -347,7 +347,7 @@
             },
             "time": "2012-05-27 02:29:03",
             "type": "mink-driver",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\Mink\\Driver": "src/"
@@ -394,7 +394,7 @@
             },
             "time": "2012-07-02 11:32:03",
             "type": "mink-driver",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\Mink\\Driver": "src/"
@@ -441,7 +441,7 @@
             },
             "time": "2011-12-19 12:04:09",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\SahiClient": "src/"
@@ -492,7 +492,7 @@
             },
             "time": "2012-07-02 11:02:55",
             "type": "behat-extension",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Behat\\Symfony2Extension": "src/"
@@ -761,12 +761,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/DoctrineBundle.git",
-                "reference": "065947875fd66b3f89ed01f94859e8600491ada5"
+                "reference": "274c24f8ddc8924cc9cbe63b937e031a9068db5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineBundle/zipball/065947875fd66b3f89ed01f94859e8600491ada5",
-                "reference": "065947875fd66b3f89ed01f94859e8600491ada5",
+                "url": "https://github.com/doctrine/DoctrineBundle/zipball/274c24f8ddc8924cc9cbe63b937e031a9068db5a",
+                "reference": "274c24f8ddc8924cc9cbe63b937e031a9068db5a",
                 "shasum": ""
             },
             "require": {
@@ -783,7 +783,7 @@
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
             },
-            "time": "1348519642",
+            "time": "1348752376",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1174,7 +1174,7 @@
             },
             "time": "2012-09-03 02:30:30",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Guzzle\\Common": ""
@@ -1218,7 +1218,7 @@
             },
             "time": "2012-08-30 22:01:34",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Guzzle\\Http": ""
@@ -1257,7 +1257,7 @@
             },
             "time": "2012-08-14 08:22:25",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Guzzle\\Parser": ""
@@ -1298,7 +1298,7 @@
             },
             "time": "2012-07-25 03:35:18",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Imagine": "lib/"
@@ -1311,17 +1311,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver",
-                "reference": "v1.0.6"
+                "reference": "v1.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/instaclick/php-webdriver/zipball/v1.0.6",
-                "reference": "v1.0.6",
+                "url": "https://github.com/instaclick/php-webdriver/zipball/v1.0.7",
+                "reference": "v1.0.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
+            "time": "1348778354",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -1340,7 +1341,7 @@
                 },
                 {
                     "name": "Anthon Pang",
-                    "email": "anthonp@nationalfibre.net",
+                    "email": "apang@softwaredevelopment.ca",
                     "role": "Fork Maintainer"
                 }
             ],
@@ -1351,8 +1352,7 @@
                 "selenium",
                 "webdriver",
                 "webtest"
-            ],
-            "time": "1345642676"
+            ]
         },
         {
             "name": "jms/aop-bundle",
@@ -1375,7 +1375,7 @@
             },
             "time": "2011-12-31 06:50:26",
             "type": "symfony-bundle",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "JMS\\AopBundle": ""
@@ -1401,7 +1401,7 @@
             },
             "time": "2011-12-31 06:40:52",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "CG\\": "src/"
@@ -1488,7 +1488,7 @@
             },
             "time": "2011-12-31 07:32:49",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Metadata\\": "src/"
@@ -1716,7 +1716,7 @@
             },
             "time": "2012-05-13 14:56:49",
             "type": "symfony-bundle",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Knp\\Bundle\\MenuBundle": ""
@@ -1811,7 +1811,7 @@
             },
             "time": "2012-06-23 04:01:38",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Buzz": "lib/"
@@ -2702,18 +2702,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/swiftmailer/swiftmailer.git",
-                "reference": "1e5482485f30a2431f9b8eb19a091eef4b57008c"
+                "reference": "1a987b45ea8dcbbe9680499800c67fc97a2d07f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/swiftmailer/swiftmailer/zipball/1e5482485f30a2431f9b8eb19a091eef4b57008c",
-                "reference": "1e5482485f30a2431f9b8eb19a091eef4b57008c",
+                "url": "https://github.com/swiftmailer/swiftmailer/zipball/1a987b45ea8dcbbe9680499800c67fc97a2d07f6",
+                "reference": "1a987b45ea8dcbbe9680499800c67fc97a2d07f6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1347542176",
+            "time": "1348747908",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2924,12 +2924,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "21d16e60fa2d4dc12a489817070896daf806b55d"
+                "reference": "f62fa8a79edc94240a7fd3ef3096ddd789eced4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/zipball/21d16e60fa2d4dc12a489817070896daf806b55d",
-                "reference": "21d16e60fa2d4dc12a489817070896daf806b55d",
+                "url": "https://github.com/symfony/symfony/zipball/f62fa8a79edc94240a7fd3ef3096ddd789eced4f",
+                "reference": "f62fa8a79edc94240a7fd3ef3096ddd789eced4f",
                 "shasum": ""
             },
             "require": {
@@ -2978,7 +2978,7 @@
                 "propel/propel1": "dev-master",
                 "monolog/monolog": "dev-master"
             },
-            "time": "1348488710",
+            "time": "1348749927",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3118,7 +3118,7 @@
             },
             "time": "2012-09-05 04:27:01",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "VIPSoft\\DoctrineDataFixturesExtension": "src/"
