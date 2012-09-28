@@ -3,6 +3,7 @@
 namespace Application\SiteBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\SerializerBundle\Annotation\Exclude;
 
 /**
  * Application\SiteBundle\Entity\Tag
@@ -30,6 +31,7 @@ class Tag
 
     /**
      * @ORM\ManyToMany(targetEntity="Snippet", mappedBy="tags")
+     * @Exclude
      **/
     private $users;
     /**
