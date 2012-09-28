@@ -10,5 +10,6 @@ Ext.define('SnippetsManager.view.SnippetsList', {
         { text: 'Created At',  dataIndex: 'created', xtype: 'datecolumn', flex: 1, format:'Y-m-d H:i:s' },
         { text: 'Updated At',  dataIndex: 'updated', xtype: 'datecolumn', flex: 1, format:'Y-m-d H:i:s' }
     ],
-    features: [{ftype:'grouping'}]
+    features: [{ftype:'grouping'}],
+    title: "Snippets"
 });
