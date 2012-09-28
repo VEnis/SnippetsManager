@@ -32,7 +32,11 @@ Ext.define("SnippetsManager.controller.Snippet", {
     },
 
     onSnippetSelect: function(selModel, selection){
-        this.getSnippetInfo().update(selection[0].data);
-        this.getSnippetInfo().setTitle(selection[0].data.name);
+        var snippet = selection[0].data;
+        this.getSnippetInfo().update(snippet);
+        this.getSnippetInfo().setTitle(snippet.title);
+
+        window.snippet = snippet;
+
     }
 });

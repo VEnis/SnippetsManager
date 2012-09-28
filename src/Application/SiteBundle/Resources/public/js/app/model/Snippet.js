@@ -3,19 +3,21 @@ Ext.define('SnippetsManager.model.Snippet', {
 
     fields: [
         {name:'id', type:'auto'},
-        {name:'name', type:'string'},
+        {name:'title', type:'string'},
         {name:'syntax', type:'string'},
-        {name:'created', type:'date', dateFormat: "timestamp"},
-        {name:'updated', type:'date', dateFormat: "timestamp"},
+        {name:'created_at', type:'date', dateFormat: "Y-m-dTH:i:sO"},
+        {name:'updated_at', type:'date', dateFormat: "Y-m-dTH:i:sO"},
         {name:'content', type:'string'}
     ],
 
+    hasMany: "Tag",
+
     proxy: {
-        type: 'ajax',
-        url: 'bundles/applicationsite/data/snippets.json',
+        type: 'rest',
+        url: 'snippets',
         reader: {
             type: 'json',
-            root: 'results'
+            root: 'snippets'
         }
     }
 });
