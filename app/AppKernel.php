@@ -39,6 +39,8 @@ class AppKernel extends Kernel
             new Difane\Bundle\TwigDatabaseBundle\DifaneTwigDatabaseBundle(),
             new Difane\Bundle\ContentPartBundle\DifaneContentPartBundle(),
             new SimpleThings\EntityAudit\SimpleThingsEntityAuditBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle($this),
+            new FOS\RestBundle\FOSRestBundle(),
             
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),

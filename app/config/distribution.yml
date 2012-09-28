@@ -77,3 +77,14 @@ sonata_formatter:
 
 sonata_user:
   impersonating_route:    distribution_demo_default_index
+
+
+fos_rest:
+    view:
+        view_response_listener: force
+    routing_loader:
+        default_format: json
+
+sensio_framework_extra:
+    view:    { annotations: false }
+    router:  { annotations: true }
