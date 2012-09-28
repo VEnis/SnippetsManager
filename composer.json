@@ -33,6 +33,7 @@
         "difane/difane-contentpart-bundle": "dev-master",
         "leafo/scssphp": "dev-master",
         "leafo/lessphp": "dev-master",
+        "willdurand/faker-bundle": "dev-master",
 
         "behat/symfony2-extension": "1.0.0",
         "behat/mink-extension": "1.0.0",
