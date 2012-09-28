@@ -4,17 +4,28 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
     <parameters>
-        <parameter key="application_site.example.class">Application\SiteBundle\Example</parameter>
+        <parameter key="application_site.admin.tag.class">Application\SiteBundle\Admin\TagAdmin</parameter>
+        <parameter key="application_site.admin.entity.tag">Application\SiteBundle\Entity\Tag</parameter>
+        <parameter key="application_site.admin.snippet.class">Application\SiteBundle\Admin\SnippetAdmin</parameter>
+        <parameter key="application_site.admin.entity.snippet">Application\SiteBundle\Entity\Snippet</parameter>
+        
     </parameters>
 
     <services>
-        <service id="application_site.example" class="%application_site.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="application_site.admin.tag" class="%application_site.admin.tag.class%">
+            <tag name="sonata.admin" manager_type="orm" group="Snippets" label="Tags" />
+            <argument />
+            <argument>%application_site.admin.entity.tag%</argument>
+            <argument />
+        </service>
+
+        <service id="application_site.admin.snippet" class="%application_site.admin.snippet.class%">
+            <tag name="sonata.admin" manager_type="orm" group="Snippets" label="Snippets" />
+            <argument />
+            <argument>%application_site.admin.entity.snippet%</argument>
+            <argument />
         </service>
     </services>
-    -->
+    
 </container>
