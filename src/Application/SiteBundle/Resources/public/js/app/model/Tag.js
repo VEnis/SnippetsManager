@@ -3,11 +3,11 @@ Ext.define('SnippetsManager.model.Tag', {
     fields: ['id', 'name'],
 
     proxy: {
-        type: 'ajax',
-        url: 'bundles/applicationsite/data/tags.json',
+        type: 'rest',
+        url: 'tags',
         reader: {
             type: 'json',
-            root: 'results'
+            root: 'tags'
         }
     }
 });
