@@ -1,3 +1,12 @@
+Ext.Loader.setConfig({
+    enabled: true,
+    paths: {
+        'SnippetsManager': 'bundles/applicationsite/js/app',
+        'Ext.ux': 'bundles/applicationsite/js/ux',
+        'Ext': 'bundles/applicationsite/js/extjs/src'
+    }
+});
+
 Ext.application({
     name: 'SnippetsManager',
     appFolder: "bundles/applicationsite/js/app",

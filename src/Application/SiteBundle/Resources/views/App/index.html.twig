@@ -8,15 +8,5 @@
 {% block javascripts %}
     {{ parent() }}
     <script src="{{ asset('bundles/applicationsite/js/extjs/ext-debug.js') }}" type="text/javascript"></script>
-    <script type="text/javascript">
-        Ext.Loader.setConfig({
-            enabled: true,
-            paths: {
-                'SnippetsManager': 'bundles/applicationsite/js/app',
-                'Ext.ux': 'bundles/applicationsite/js/ux',
-                'Ext': 'bundles/applicationsite/js/extjs/src'
-            }
-        });
-    </script>
     <script src="{{ asset('bundles/applicationsite/js/app/Application.js') }}" type="text/javascript"></script>
 {% endblock %}
