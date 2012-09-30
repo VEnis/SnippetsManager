@@ -2,7 +2,7 @@ Ext.define('SnippetsManager.view.Viewport', {
     extend: 'Ext.container.Viewport',
 
     requires: [
-        'SnippetsManager.view.ActionBar',
+        'SnippetsManager.view.TopBar',
         'SnippetsManager.view.SnippetInfo',
         'SnippetsManager.view.SnippetsList',
         'SnippetsManager.view.TagsList'        
@@ -35,7 +35,7 @@ Ext.define('SnippetsManager.view.Viewport', {
                     flex: 2
                 }]
             },{
-                xtype:'actionbar',
+                xtype:'topbar',
                 region:'north'
             }]
         };
