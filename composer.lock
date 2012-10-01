@@ -1,5 +1,5 @@
 {
-    "hash": "f2328ddb250827df4cfea104144cf7e4",
+    "hash": "a0da33057dd9ee1cc71274deafa1df8d",
     "packages": [
         {
             "name": "behat/behat",
@@ -36,7 +36,7 @@
                 "bin/behat"
             ],
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\Behat": "src/"
@@ -90,7 +90,7 @@
             },
             "time": "2012-09-26 01:03:21",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\Gherkin": "src/"
@@ -249,7 +249,7 @@
             },
             "time": "2012-07-02 10:59:06",
             "type": "behat-extension",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\MinkExtension": "src/"
@@ -301,7 +301,7 @@
             },
             "time": "2012-07-02 11:30:36",
             "type": "mink-driver",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\Mink\\Driver": "src/"
@@ -347,7 +347,7 @@
             },
             "time": "2012-05-27 02:29:03",
             "type": "mink-driver",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\Mink\\Driver": "src/"
@@ -394,7 +394,7 @@
             },
             "time": "2012-07-02 11:32:03",
             "type": "mink-driver",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\Mink\\Driver": "src/"
@@ -441,7 +441,7 @@
             },
             "time": "2011-12-19 12:04:09",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\SahiClient": "src/"
@@ -492,7 +492,7 @@
             },
             "time": "2012-07-02 11:02:55",
             "type": "behat-extension",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Behat\\Symfony2Extension": "src/"
@@ -765,20 +765,20 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineBundle/zipball/274c24f8ddc8924cc9cbe63b937e031a9068db5a",
+                "url": "https://github.com/doctrine/DoctrineBundle/zipball/db818ceec46d05fed4f944b957f82a4ab5197e27",
                 "reference": "274c24f8ddc8924cc9cbe63b937e031a9068db5a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "doctrine/dbal": ">=2.2,<2.4-dev",
-                "symfony/framework-bundle": "2.1.*",
-                "symfony/doctrine-bridge": "2.1.*"
+                "symfony/framework-bundle": ">=2.1,<2.3-dev",
+                "symfony/doctrine-bridge": ">=2.1,<2.3-dev"
             },
             "require-dev": {
                 "doctrine/orm": ">=2.2,<2.4-dev",
-                "symfony/validator": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "symfony/yaml": ">=2.1,<2.3-dev",
+                "symfony/validator": ">=2.1,<2.3-dev"
             },
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
@@ -1084,6 +1084,59 @@
             "time": "1346234818"
         },
         {
+            "name": "friendsofsymfony/jsrouting-bundle",
+            "version": "dev-master",
+            "target-dir": "FOS/JsRoutingBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle",
+                "reference": "1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/zipball/1.0.2",
+                "reference": "1.0.2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.0,<2.2-dev",
+                "symfony/serializer": ">=2.0,<2.2-dev"
+            },
+            "time": "1346400455",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "FOS\\JsRoutingBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSJsRoutingBundle/contributors"
+                }
+            ],
+            "description": "Symfony FOSJsRoutingBundle",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "Js Routing"
+            ]
+        },
+        {
             "name": "friendsofsymfony/rest",
             "version": "dev-master",
             "target-dir": "FOS/Rest",
@@ -1102,7 +1155,6 @@
                 "php": ">=5.3.2",
                 "symfony/http-foundation": ">=2.0,<2.3-dev"
             },
-            "time": "1347135166",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1132,7 +1184,8 @@
             "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
                 "rest"
-            ]
+            ],
+            "time": "1347135166"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
@@ -1163,7 +1216,6 @@
             "suggest": {
                 "sensio/framework-extra-bundle": "Add support for route annotations"
             },
-            "time": "1348766861",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1198,7 +1250,8 @@
             "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
                 "rest"
-            ]
+            ],
+            "time": "1348766861"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1211,7 +1264,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/zipball/1b2d06b0f9a7ef5dbd94433ad15c3ab7cc3eb492",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/zipball/570a24893a65e6e90a649d55f384be810202b6f0",
                 "reference": "1b2d06b0f9a7ef5dbd94433ad15c3ab7cc3eb492",
                 "shasum": ""
             },
@@ -1233,6 +1286,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
+            "time": "1348823929",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1267,8 +1321,7 @@
             "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
                 "User management"
-            ],
-            "time": "1348823929"
+            ]
         },
         {
             "name": "fzaninotto/faker",
@@ -1287,6 +1340,7 @@
             "require": {
                 "php": ">=5.3.3"
             },
+            "time": "1348225884",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -1307,8 +1361,7 @@
                 "faker",
                 "fixtures",
                 "data"
-            ],
-            "time": "1348225884"
+            ]
         },
         {
             "name": "guzzle/common",
@@ -1331,7 +1384,7 @@
             },
             "time": "2012-09-03 02:30:30",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Guzzle\\Common": ""
@@ -1375,7 +1428,7 @@
             },
             "time": "2012-08-30 22:01:34",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Guzzle\\Http": ""
@@ -1414,7 +1467,7 @@
             },
             "time": "2012-08-14 08:22:25",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Guzzle\\Parser": ""
@@ -1455,7 +1508,7 @@
             },
             "time": "2012-07-25 03:35:18",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Imagine": "lib/"
@@ -1532,7 +1585,7 @@
             },
             "time": "2011-12-31 06:50:26",
             "type": "symfony-bundle",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "JMS\\AopBundle": ""
@@ -1558,7 +1611,7 @@
             },
             "time": "2011-12-31 06:40:52",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "CG\\": "src/"
@@ -1645,7 +1698,7 @@
             },
             "time": "2011-12-31 07:32:49",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Metadata\\": "src/"
@@ -1934,7 +1987,7 @@
             },
             "time": "2012-05-13 14:56:49",
             "type": "symfony-bundle",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Knp\\Bundle\\MenuBundle": ""
@@ -2029,7 +2082,7 @@
             },
             "time": "2012-06-23 04:01:38",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Buzz": "lib/"
@@ -3336,7 +3389,7 @@
             },
             "time": "2012-09-05 04:27:01",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "VIPSoft\\DoctrineDataFixturesExtension": "src/"
@@ -3380,6 +3433,7 @@
                 "symfony/framework-bundle": "2.*",
                 "fzaninotto/faker": "*"
             },
+            "time": "1327612591",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -3402,8 +3456,7 @@
                 "faker",
                 "fixtures",
                 "data"
-            ],
-            "time": "1327612591"
+            ]
         }
     ],
     "packages-dev": null,
@@ -3427,6 +3480,7 @@
         "leafo/scssphp": 20,
         "leafo/lessphp": 20,
         "willdurand/faker-bundle": 20,
-        "friendsofsymfony/rest-bundle": 20
+        "friendsofsymfony/rest-bundle": 20,
+        "friendsofsymfony/jsrouting-bundle": 20
     }
 }

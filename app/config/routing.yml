@@ -11,6 +11,9 @@ snippets:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #    prefix:   /_internal
 
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
 application_site:
     resource: "@ApplicationSiteBundle/Controller/"
     type:     annotation

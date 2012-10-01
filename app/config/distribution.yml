@@ -88,3 +88,7 @@ fos_rest:
 sensio_framework_extra:
     view:    { annotations: false }
     router:  { annotations: true }
+
+
+fos_js_routing:
+    routes_to_expose: [ tags, snippets, fos_user_security ]
